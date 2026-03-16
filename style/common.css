@@ -24,6 +24,9 @@ p{
 .b2{
     font-size: var(--fs-bd2);
 }
+.fwr{font-weight: var(--fw-reg);}
+.fwm{font-weight: var(--fw-med);}
+.fwb{font-weight: var(--fw-bold);}
 .de{
     font-size: var(--fs-det);
 }
@@ -42,9 +45,19 @@ p{
 .tab{display: none;}
 .pc{display: block;}
 main{
-    margin-top: 100px;
+    margin-top: 5rem;
 }
-
+.btn-style{
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    align-items: center;
+    gap: var(--space-normal);
+    border-bottom: 1px solid #fff;
+}
+.btn-style:hover{
+    background-color: var(--point-color);
+    color: #fff;
+}
 @media (max-width:1440px){
     main{
         margin-top: 5rem;

@@ -256,6 +256,208 @@
             },
             });
         </script>
+        <div class="story">
+            <div class="common-frame">
+                <h1>Our story</h1>
+                <div class="story-frame">
+                    <div class="txt-story">
+                        <h2>For Precious Mealtime Moments</h2>
+                        <h4>작은 입에서 시작된 이름, moumou</h4>
+                        <p>“mou”는 프랑스어로 ‘입’을 뜻합니다. 오물오물, 천천히, 부드럽게..</p>
+                        <p> 작은 입으로 세상을 맛보는 아이들에게 식사 시간은 매일 반복되는 가장 즐거운 놀이여야 합니다.
+                        부드러운 촉감과 따뜻한 디자인으로 아이의 오감을 깨우고, 엄마와 아빠에게는 여유로운 미소를 선물하는 곳. moumou는 세상에서 가장 부드러운 식탁을 만듭니다.</p>
+
+                    </div>
+                   <figure class="img-story">
+                        <img src="./story.jpg" alt="카페 인테리어 사진">
+                   </figure>
+                </div>
+                <div class="philo">
+                    <ul class="philo-list">
+                        <li>
+                            <h3>01. Soft Beginning</h3>
+                            <div>
+                                <p class="fwb">세상을 처음 맛보는 순간을, 가장 부드럽게</p>
+                                <p class="fwr">첫 이유식은 단순한 한 끼가 아니라 아이에게는 세상을 받아들이는 첫 경험입니다. moumou는 그 시작이 부담스럽지 않도록, 부드러운 촉감과 안정적인 형태로 아이의 첫 식사를 조용히 돕습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>02. Gentle Form</h3>
+                            <div>
+                                <p class="fwb">아이의 속도에 맞춘, 가장 조용한 디자인</p>
+                                <p class="fwr">아이의 손은 아직 작고, 움직임은 서툴고 천천히 배워갑니다. moumou의 둥근 곡선과 절제된 구조는 아이의 리듬을 방해하지 않도록 설계되었습니다. 디자인은 드러나기보다, 자연스럽게 스며들도록.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>03. Precious Moments</h3>
+                            <div>
+                                <p class="fwb">오물오물 소리가, 오래 남는 기억이 되도록</p>
+                                <p class="fwr">식사는 배를 채우는 시간이 아니라 눈을 맞추고, 웃음을 나누는 시간이라 믿습니다. 오물오물 작은 입모양, 숟가락이 닿는 소리, 그 따뜻한 공기가 오래 기억되기를 바랍니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu-frame moumou">
+            <div class="common-frame">
+                <h1>SIGNATURE MOUMOU</h1>
+                <p class="fwm">아이의 첫 식사부터, 자라나는 모든 순간을 부드럽게 담아낸 시그니처.</p>
+                <div class="swiper signature-moumou-slider">          
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig1.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU  Cloud  Plate</h4>
+                            <p>정돈된 분리 구조로 식사를 나누어 담습니다. 섞임 없이, 아이의 리듬에 맞춰. 매일의 식탁에 조용히 스며드는 moumou의 기본. </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig2.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU Spoon Set</h4>
+                            <p>유연한 실리콘 헤드와짧고 안정적인 그립감.
+                            빠르게 먹이기보다 천천히 익숙해지는 시간을 위해. </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig3.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU Suction Bowl</h4>
+                            <p>강한 흡착력과 둥근 실루엣으로흔들림 없이 식사를 이어가도록.
+                            아이의 작은 도전을 조용히 응원합니다. </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/sig4.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU Divided Plate</h4>
+                            <p>작은 손이 자연스럽게 닿고,한 숟가락이 편안하게 떠지는 깊이.
+                            아이의 속도에 맞춘 형태로첫 식사의 시간을 조용히 지지합니다. </p>
+                        </div>
+                    </div>
+                </div>
+    <script>
+        const signatureMoumouSlider = new Swiper(".signature-moumou-slider",{
+            slidesPerView: 1.3,
+            spaceBetween: 14,
+            breakpoints: {
+                400:{
+                    //400화면 너비보다 클 때
+                    slidesPerView: 2.2,
+                    spaceBetween: 14,
+                },
+                768:{
+                    //768화면 너비보다 클 때
+                    slidesPerView: 4,
+                    spaceBetween: 18,
+                },
+                1440:{
+                    // 1440화면 너비보다 클 때
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            }
+        }) 
+    </script>
+            </div>
+        </div>
+
+
+        <div class="menu-frame best">
+            <div class="common-frame">
+                <h1>BEST MOUMOU</h1>
+                <p class="fwm">많은 부모들이 선택한, MOUMOU의 가장 사랑받는 식기.</p>
+                <div class="swiper best-moumou-slider">          
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best1.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU Beginner Set</h4>
+                            <p>아기의 첫 이유식을 위한 시작 세트.작은 손에도 편안하게 잡히는 식기와 부드러운 식사 경험을 담았습니다. </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best2.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU Starter Set</h4>
+                            <p>아기의 첫 식사를 부드럽게 시작할 수 있도록 구성된 이유식 스타터 세트.작은 손에도 편안하고, 스스로 먹는 즐거움을 돕습니다. </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best3.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU Baby Bib</h4>
+                            <p>아기의 첫 식사 순간을 깔끔하게 지켜주는 부드러운 베이비 턱받이.편안한 착용감으로 식사 시간을 더 즐겁게 만들어줍니다. </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/best4.jpg" alt="">
+                            </figure>
+                            <h4>MOUMOU Animal Ice Tray</h4>
+                            <p>귀여운 동물 모양으로 이유식을 간편하게 소분·보관할 수 있는 아이스 트레이.필요한 만큼 쏙 꺼내 쓰기 쉬워 이유식 준비가 더 즐거워집니다. </p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const bestMoumouSlider = new Swiper(".best-moumou-slider",{
+                        slidesPerView: 1.3,
+                        spaceBetween: 14,
+                        breakpoints: {
+                            400:{
+                                //400화면 너비보다 클 때
+                                slidesPerView: 2.2,
+                                spaceBetween: 14,
+                            },
+                            768:{
+                                //768화면 너비보다 클 때
+                                slidesPerView: 4,
+                                spaceBetween: 18,
+                            },
+                            1440:{
+                                // 1440화면 너비보다 클 때
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            },
+                        }
+                    }) 
+                </script>
+            </div>
+        </div>
+        <div class="franchise">
+            <div class="common-frame">
+                <h1>당신의 시작을, moumou가 함께합니다.</h1>
+                <p class="fwm">검증된 시스템과 감각적인 브랜딩으로 안정적인 창업을 제안합니다.</p>
+                <a href="#" class="btn-style">가맹상담신청
+                    <img src="../SVG/arrow-btn.svg" alt="바로가기 화살표">
+                </a>
+                <h3>MOUMOU를 선택해야 하는 이유</h3>
+                <ul class="why">
+                    <li>
+                        <p class="fwb">Growing Baby Market</p>
+                        <p class="fwm">출산과 육아 시장은 꾸준히 성장하고 있습니다. 이유식기와 육아용품은 필수 소비 제품으로 안정적인 수요를 기반으로 한 브랜드입니다.</p>
+                    </li>
+                    <li>
+                        <p class="fwb">Strong Brand Identity</p>
+                        <p class="fwm">MOUMOU는 아기의 식사 시간을 위한감성 육아 브랜드로 차별화된 브랜드 스토리와 디자인 아이덴티티를 갖추고 있습니다.</p>
+                    </li>
+                    <li>
+                        <p class="fwb">High Quality Products</p>
+                        <p class="fwm">안전한 소재와 아기의 사용성을 고려한 디자인으로 
+                        부모들이 신뢰할 수 있는 프리미엄 이유식기를 제공합니다.</p>
+                    </li>
+                    <li>
+                        <p class="fwb">Systematic Franchise Support</p>
+                        <p class="fwm">가맹점 운영을 위한 체계적인 교육과    마케팅·운영 지원 시스템으로안정적인 매장 운영을 돕습니다.</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </main>
 </body>
 </html> 
