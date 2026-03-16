@@ -18,22 +18,19 @@
     --fw-med:500;
     --fw-bold:700;
 
-
-
-
-
     /*색상*/
     /* main->700 */
-    --pm-color-0:F5F8FF
-    --pm-color-100:C5D9FD
-    --pm-color-200:98BAF9
-    --pm-color-300:709EF2
-    --pm-color-400:5086E9
-    --pm-color-500:3872DD
-    --pm-color-600:2761CD
-    --pm-color-700:1B52B8
-    --pm-color-800:1344A0
-    --pm-color-900:0E3887
+    --pm-color-0:#F5F8FF;
+    --pm-color-100:#C5D9FD;
+    --pm-color-200:#98BAF9;
+    --pm-color-300:#709EF2;
+    --pm-color-400:#5086E9;
+    --pm-color-500:#3872DD;
+    --pm-color-600:#2761CD;
+    --pm-color-700:#1B52B8;
+    --pm-color-800:#1344A0;
+    --pm-color-900:#0E3887;
+    --point-color:#1B52B8;
 
     /* 여백 */
     --space-2x-small:0.125rem;
@@ -45,10 +42,4 @@
     --space-2x-large:4rem;
     --space-3x-large:6rem;
 
-
-
-
-
-
-    
 }

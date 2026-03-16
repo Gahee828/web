@@ -4,11 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>moumou</title>
+    <link rel="stylesheet" href="./style/font.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/system.css">
     <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <script src="./script/header.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
+    <!-- 스마트 기기에서 보이는 메뉴 -->
+    <div class="menu-smart-hidden"> 
+        <div class="menu-top">
+            <div class="common-frame">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./img/logo-1.svg" alt="무무 로고">
+                    </a>
+                </div>
+                <span class="btn-close"><img src="./img/material-symbols_close-rounded.svg" alt="전체메뉴닫기버튼"></span>
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="common-frame">
+                <ul class="gnb-smart">
+                    <li class="">
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">MOUMOU</a>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Philosophy</a></li>
+                            <li><a href="#">Material & Safety</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">TABLE by moumou</a>
+                        <ul>
+                            <li><a href="#">Feeding Set</a></li>
+                            <li><a href="#">Bowl & Plate</a></li>
+                            <li><a href="#">Spoon & Fork</a></li>
+                            <li><a href="#">Cup & Tray</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">AGE GUIDE</a>
+                        <ul>
+                            <li><a href="#">First Meal · 6M</a></li>
+                            <li><a href="#">Self Feeding · 9M</a></li>
+                            <li><a href="#">Toddler Meal · 12M+</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">MOUMOU MOMENT</a>
+                        <ul>
+                            <li><a href="#">Meal Moment</a></li>
+                            <li><a href="#">Daily Table</a></li>
+                            <li><a href="#">Lookbook</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">FOR MOM</a>
+                        <ul>
+                            <li><a href="#">Mom’s Note</a></li>
+                            <li><a href="#">Guide</a></li>
+                            <li><a href="#">Care</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="btn-more mo"><img src="./img/btn-more.svg" alt="메뉴 더보기"></span>
+                        <a href="#">WITH MOUMOU</a>
+                        <ul>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">Notice</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu-sns common-frame">
+            <ul class="sns">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-instagram.svg" alt="무무 인스타로 바로가기">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-youtube.svg" alt="무무 유튜브로 바로가기">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/sns-twitter.svg" alt="무무 트위터로 바로가기">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- pc용 헤더 -->
     <header>
         <div class="common-frame">
             <div class="logo">
@@ -30,13 +135,127 @@
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                            <img src="/img/sns-twitter.svg" alt="무무 트위터로 바로가기">
+                            <img src="./img/sns-twitter.svg" alt="무무 트위터로 바로가기">
                         </a>
                     </li>
                 </ul>
-                <ul class="gnb"></ul>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">MOUMOU</a>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Philosophy</a></li>
+                            <li><a href="#">Material & Safety</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">TABLE by moumou</a>
+                        <ul>
+                            <li><a href="#">Feeding Set</a></li>
+                            <li><a href="#">Bowl & Plate</a></li>
+                            <li><a href="#">Spoon & Fork</a></li>
+                            <li><a href="#">Cup & Tray</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">AGE GUIDE</a>
+                        <ul>
+                            <li><a href="#">First Meal · 6M</a></li>
+                            <li><a href="#">Self Feeding · 9M</a></li>
+                            <li><a href="#">Toddler Meal · 12M+</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MOUMOU MOMENT</a>
+                        <ul>
+                            <li><a href="#">Meal Moment</a></li>
+                            <li><a href="#">Daily Table</a></li>
+                            <li><a href="#">Lookbook</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">FOR MOM</a>
+                        <ul>
+                            <li><a href="#">Mom’s Note</a></li>
+                            <li><a href="#">Guide</a></li>
+                            <li><a href="#">Care</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">WITH MOUMOU</a>
+                        <ul>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">Notice</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
+
+    <!-- 스마트 기기용 헤더 -->
+    <div class="header-smart">
+        <div class="common-frame">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo-1.svg" alt="상단로고">
+                </a>
+            </div>
+            <span class="btn-menu"><img src="./img/Menu.svg" alt="전체메뉴버튼"></span>
+        </div>
+    </div>
+
+    <!-- 전체 컨텐츠 -->
+    <main>
+        <!-- 히어로배너 -->
+         <!-- Slider main container -->
+        <div class="swiper hero-slider">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/slide1-pc.jpg" alt="moumou grand open banner" class="pc">
+                    <img src="./img/slide1-tab.jpg" alt="moumou grand open banner" class="tab">
+                    <img src="./img/slide1-mo.jpg" alt="moumou grand open banner" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slide2-pc.jpg" alt="moumou grand open banner" class="pc">
+                    <img src="./img/slide2-tab.jpg" alt="moumou grand open banner" class="tab">
+                    <img src="./img/slide2-mo.jpg" alt="moumou grand open banner" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slide3-pc.jpg" alt="moumou grand open banner" class="pc">
+                    <img src="./img/slide3-tab.jpg" alt="moumou grand open banner" class="tab">
+                    <img src="./img/slide3-mo.jpg" alt="moumou grand open banner" class="mo">
+                </div>
+            </div>
+            <!-- 페이지네이션 넣겠다~ -->
+            <div class="pagination"></div>
+        </div>
+        <script>
+            const heroSwiper = new Swiper('.hero-slider', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+        </script>
+    </main>
 </body>
 </html> 
