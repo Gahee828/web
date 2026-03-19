@@ -2,6 +2,9 @@ html{
     font-family: 'pretendard', sans-serif;
     font-size: var(--basic-font-pc);
 }
+main{
+    min-height: 60vh;
+}
 h1{
     font-size: var(--fs-h1);
     font-weight: var(--fw-bold);
@@ -58,6 +61,7 @@ main{
     background-color: var(--point-color);
     color: #fff;
 }
+.ptc{color: var(--point-color);}
 @media (max-width:1440px){
     main{
         margin-top: 5rem;
