@@ -1,3 +1,3 @@
-function toWon(number) {
-    return number.toLocaleString('ko-KR');
+function toWon(price) {
+    return new Intl.NumberFormat('ko-KR').format(price);
 }

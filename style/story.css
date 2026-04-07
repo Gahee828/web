@@ -26,11 +26,12 @@
 .core-card{
     
 }
-.core-card>li{
+.core-card>li {
     border: 1px solid #cfcfcf;
     padding: var(--space-large);
-    border-radius: 1rem;  
+    border-radius: 1rem;
     box-sizing: border-box;
+    height: initial;
 }
 .core-card>li>h4{
     margin-bottom: var(--space-small);

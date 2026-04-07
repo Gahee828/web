@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="./script/head-common.js"></script>
+    <script src="./script/header.js"></script>
+    <script src="./script/include.js" defer></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/event.css">
+
+</head>
+<body>
+    <div id="include-header"></div>
+    <main>
+        <div class="sub-banner">
+            <div class="common-frame">
+                <h1>Special Moments, Special Offers</h1>
+            </div>
+        </div>
+        <div class="event1">
+            <div class="common-frame">
+                <h3>EVENT</h3>
+                <P>부담없이 즐기는 MOUMOU의 특별한 혜택</P>
+                <div class="event1-content">
+                    <div class="event1-img-slider">
+                        <div class="swiper event1-img-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slide1.jpg" alt="신규회원 웰컴 혜택">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slide2.jpg" alt="쇼룸 방문 혜택">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slide3.jpg" alt="포토리뷰 이벤트">
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="event1-txt-slider">
+                        <div class="swiper event1-txt-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h4>신규 회원 웰컴 혜택</h4>
+                                    <p>MOUMOU와의 첫 만남을 위한 특별한 시작</p>
+                                    <p class="b2 bwm">👉처음이라 더 설레는 혜택을 담았어요<br> 
+                                        회원가입 시 5,000원 할인 쿠폰 증정<br>
+                                        첫 구매 고객 추가 5% 할인<br>
+                                        카카오 채널 추가 시 추가 쿠폰 제공</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>쇼룸 방문 혜택</h4>
+                                    <p class="b2 bwm">직접 경험하시는 고객님께 드리는 작은 선물<br>
+                                        쇼룸 방문 시 웰컴 기프트 증정<br>
+                                        현장 구매 시 추가 할인 혜택 제공 
+                                    </p>
+                                    <p class="b2 bwm">👉 쇼룸에서 MOUMOU의 특별한 순간을 경험해보세요</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>포토리뷰 이벤트</h4>
+                                    <p class="b2 bwm">정성껏 남겨주신 후기에 감사의 마음을 담아<br>
+                                        포토 리뷰 작성 시 적립금 2,000원 지급<br>
+                                        베스트 리뷰 선정 시 5,000원 적립금
+                                    </p>
+                                    <p class="b2 bwm">👉 실제 육아 속 이야기를 들려주세요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const event1ImgSlider = new Swiper(".event1-img-swiper",{
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                speed:1000
+            })
+            const event1TxtSlider = new Swiper(".event1-txt-swiper",{
+                effect: "fade",
+                speed:1000
+            })
+            event1ImgSlider.on('slideChange', function () {
+                // console.log(event1ImgSlider.realIndex);
+                event1TxtSlider.slideTo(event1ImgSlider.realIndex, 1000)
+            });
+        </script>
+        <div class="event2">
+            <div class="common-frame">
+                <h3>진행 중인 이벤트</h3>
+                <ul class="event-grid">
+                    <li>
+                        <figure>
+                            <img src="./img/event1.jpg" alt="세트 구매 할인 이벤트">
+                        </figure>
+                        <h4>세트 구매 할인 이벤트</h4>
+                        <p>
+                            더 많이 담을수록 더 좋은 혜택<br>
+                            2개 이상 구매 시 5% 할인<br>
+                            3개 이상 구매 시 10% 할인<br>
+                            👉 우리 아이 식탁을 한 번에 준비해보세요
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event2.jpg" alt="무료 배송 혜택">
+                        </figure>
+                        <h4>무료 배송 혜택</h4>
+                        <p>
+                            50,000원 이상 구매 시 무료배송<br>
+                            👉 부담 없이 편하게 만나보세요
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event3.jpg" alt="포토리뷰 이벤트">
+                        </figure>
+                        <h4>포토리뷰 이벤트</h4>
+                        <p>
+                            정성껏 남겨주신 후기에 감사의 마음을 담아<br>
+                            포토 리뷰 작성 시 적립금 2,000원 지급<br>
+                            베스트 리뷰 선정 시 5,000원 적립금<br>
+                            👉 실제 육아 속 이야기를 들려주세요
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event4.jpg" alt="쇼룸 방문 혜택">
+                        </figure>
+                        <h4>쇼룸 방문 혜택</h4>
+                        <p>
+                            직접 경험하시는 고객님께 드리는 작은 선물<br>
+                            쇼룸 방문 시 웰컴 기프트 증정<br>
+                            현장 구매 시 추가 할인 혜택 제공<br>
+                            👉 아이와 함께 편하게 방문해보세요
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <div id="include-footer"></div>
+</body>
+</html> 

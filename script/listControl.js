@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
-
     // ul태그에 li태그의 형태로 상품 데이터를 넣는 소스코드
     const list = document.querySelector(".list-grid")
     let result = ""
     listArray.forEach(item=>{
-        result +=`
+        result += `
         <li>
-            <a href="./datail.html?pid=0">
+            <a href="./detail.html?pid=${item.pid}">
                 <figure>
                     <img src="./img/${item.pThumbnail}" alt="${item.pName}">
                 </figure>
@@ -22,28 +21,17 @@ document.addEventListener("DOMContentLoaded",()=>{
             </a>
         </li>`
     })
-
     list.innerHTML = result
 
-    //상품 개수를 데이터 개수에 맞게 입력하는 코드
-    listArray.length
+    // 상품 개수를 데이터 갯수에 맞게 입력하는 코드
     document.querySelector("#current-count").innerHTML = listArray.length
+    
+    
+
+
+    
 
 
 
-    // heart 버튼 클릭 이벤트
-    const btnHearts = document.querySelectorAll(".btn-heart")
-    btnHearts.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault()
-            
-            let imgtag = btn.children[0]
-            let originSrc = btn.children[0].getAttribute("src")
-            if(originSrc == './img/icn-heart-line.svg'){
-                imgtag.setAttribute("src", './img/icn-heart-fill.svg')
-            } else {
-                imgtag.setAttribute("src", './img/icn-heart-line.svg')
-            }
-        })
-    })
+
 })

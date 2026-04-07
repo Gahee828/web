@@ -171,7 +171,7 @@
 }
 .list-grd li p{
     margin-bottom: var(--space-large);
-    -webkit/* 외우지말고 복사해서 쓸 것 */
+    /* 외우지말고 복사해서 쓸 것 */
     display: -webkit-box;
     -webkit-box-orient: vertical; /* 세로 방향 */
     -webkit-line-clamp: 2;  /* 최대 3줄 */
@@ -228,6 +228,18 @@
 }
 .rev-thumb-list-wrap{
     overflow-x: auto;
+}
+.detail-img{
+    margin-top: var(--space-3x-large);
+    margin-bottom: var(--space-3x-large);
+    text-align: center;
+}
+.detail-img img{
+    
+}
+.detail-img h2{
+    margin-bottom: var(--space-x-large);
+    text-align: center;
 }
 
 @media (max-width:1440px){
