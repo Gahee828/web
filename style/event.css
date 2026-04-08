@@ -87,6 +87,7 @@
 
 @media (max-width: 768px) {
     .sub-banner{
+        background: url(../img/sub-banner-event-mo.jpg) no-repeat 50% 50% / cover;
         height: 600px;
         text-align: center;
     }

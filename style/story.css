@@ -118,7 +118,8 @@
 }
 @media (max-width:768px){
     .sub-banner{
-        height:500px;
+    background: url(../img/story-sub-banner-mo.jpg) 50% 50% / cover;
+    height: 500px;
     }
     .core h1{
         font-size:60px;
